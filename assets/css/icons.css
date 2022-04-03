@@ -22997,6 +22997,8 @@ readers do not read off random characters that represent icons */
 
 .dripicons-home:before {
   content: "\e006"; }
+.dripicons-users:before {
+  content: "\e010"; }
 
 .dripicons-hourglass:before {
   content: "\e007"; }
