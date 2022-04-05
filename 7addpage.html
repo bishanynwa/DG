@@ -35,7 +35,20 @@
       rel="stylesheet"
       type="text/css"
     />
+    <style>
+      main .ck.ck-content {
+        padding-left: 20px;
+        height: 300px;
+      }
+      
 
+      .ck.ck-toolbar {
+        border-radius: 8px 8px 0 0 !important;
+      }
+      .ck.ck-editor__editable_inline  {
+        border-radius:  0 0 8px 8px !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -540,14 +553,38 @@
 
       <!-- ============================================================== -->
       <!-- Start right Content here -->
-      <main style="    margin-top: 200px;
+      <div class="page-title-box" style="background-color: #cc5500; height: 234px;">
+        <div class="container-fluid" style="margin-top: 80px; width: 75vw;margin-left: 20vw;">
+         <div class="row align-items-center">
+             <div class="col-sm-6">
+                 <div class="page-title">
+                     <h4>Users</h4>
+                         <ol class="breadcrumb m-0">
+                             <li class="breadcrumb-item"><a href="javascript: void(0);">DG</a></li>
+                             <li class="breadcrumb-item"><a href="javascript: void(0);">Ecommerce</a></li>
+                             <li class="breadcrumb-item active">Users</li>
+                         </ol>
+                 </div>
+             </div>
+             <div class="col-sm-6">
+                <div class="float-end d-none d-sm-block">
+                    <a href="" class="btn btn-success">Add Widget</a>
+                </div>
+             </div>
+         </div>
+        </div>
+     </div>
+
+      <main style="    margin-top: -80px;
       margin-left: 20vw;
-      width: 75vw;">
+      width: 78vw;
+      border-radius: 10px;
+      ">
 
   
-        <div class="centered">
-          <div id="editor">
-            <p>Your Text Here</p>
+        <div class="centered" >
+          <div id="editor" >
+            <p >Your Text Here</p>
           </div>
       
           
@@ -569,11 +606,17 @@
             console.error( err.stack );
           } );
       </script>
+
+      <div class="col-sm-6" style="margin-left: auto; margin-right: 40px; margin-top: 20px;">
+        <div class="float-end d-none d-sm-block">
+            <a href="" class="btn btn-success">Submit</a>
+        </div>
+     </div>
       <!-- ============================================================== -->
       <!-- <div class="main-content">
         <div class="page-content">
           <!-- start page title -->
-         
+      
           
            
 
